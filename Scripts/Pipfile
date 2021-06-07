@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-dotenv = "*"
+ujson = "*"
+flask-cors = "*"
+flask-jwt-extended = "*"
+aicsimageio = "*"
+flask = "*"
+pillow = "*"
+tifffile = "*"
+wheel = "*"
+pandas = "*"
+scikit-image = "==0.18.1"
+requests = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

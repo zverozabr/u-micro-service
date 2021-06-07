@@ -1,0 +1,18 @@
+version: "3.7"
+
+networks:
+  first:
+
+services:
+  ms_u_service:
+    container_name: ms-u-service
+    network_mode: 'host'
+    volumes:
+      - type: bind
+        source: C:\\temp\\DATA_STORAGE
+        target: /DATA_STORAGE
+    env_file:
+      - ./.env
+    build:
+      context: .
+      dockerfile: Dockerfile
